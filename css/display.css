@@ -1,0 +1,53 @@
+* {
+    font-family: 'IBM Plex Serif', 'Times New Roman', Times, serif;
+    font-weight: 300;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: white;
+    margin: 0;
+    padding: 0;
+}
+
+main>h1 {
+    text-justify: left;
+}
+
+header > h1 {
+    padding-left: 2em;
+}
+
+footer {
+    text-align: center;
+}
+
+li {
+    display: inline;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+}
+
+li {
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
