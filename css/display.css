@@ -36,8 +36,8 @@ footer {
     background-color: black;
     color: white;
 }
+.topnav {
 
-ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -45,12 +45,12 @@ ul {
     background-color: rgb(0, 0, 0);
 }
 
-li {
+.topnav > li {
     display: inline;
     float: right;
 }
 
-li a {
+.topnav >li a {
     display: block;
     color: white;
     text-align: center;
@@ -58,7 +58,7 @@ li a {
     text-decoration: none;
 }
 
-li a:hover {
+.topnav > li a:hover {
     background-color: rgb(34, 29, 93);
 }
 
