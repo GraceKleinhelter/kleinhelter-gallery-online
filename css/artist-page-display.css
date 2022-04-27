@@ -1,0 +1,16 @@
+.mullerbackgrounddisplay {
+    background-image: url('../images/mmullerUmbrella.jpg');
+    background-size:contain;
+    background-attachment:scroll;
+    background-repeat: no-repeat;
+}
+
+.artistpageblurb {
+    display: block;
+    background-color: white;
+    height: 10em;
+    width: 18em;
+    text-align: center;
+    padding: 2em;
+    margin: 1em;
+}
