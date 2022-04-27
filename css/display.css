@@ -14,6 +14,9 @@ body {
 
 main > h1 {
     text-justify: left;
+    padding: 2em;
+    margin: 1em;
+    font-weight: 700;
     
 }
 
