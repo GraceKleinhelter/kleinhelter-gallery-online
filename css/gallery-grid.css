@@ -1,23 +1,26 @@
 html, body {
     height: 100%;
+   
 }
 
 body {
     margin: 1em;
     display: grid;
-    grid: auto-flow min-content / repeat(12, 1fr);
-    gap: 1em;
-}
-
-header, footer {
-    grid-column: 1 / 13;
+    grid: auto-flow min-content / repeat(12);
    
 }
 
-main {
-    grid-column: 3 / 9;
+header {
+    grid-column: 1 / 13; 
+    grid-row: 1 / 2;
 }
 
-aside {
-    grid-column: 9 / 13;
+footer {
+    margin: 0;
+    padding: 0;
+    grid-column: 1 / 13; 
+}
+main {
+    grid-column: 1 / 13;
+    grid-row: 2 / 12;   
 }

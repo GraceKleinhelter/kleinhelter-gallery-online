@@ -7,25 +7,31 @@
 
 html,
 body {
-    background: white;
+    background-color: white;
     margin: 0;
-    padding: 0;
+    padding: 0;    
 }
 
-main>h1 {
+main > h1 {
     text-justify: left;
+    
+}
+
+.homepagedisplay {
+    background-image: url('images/gallery-interior2.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 header > h1 {
+    font-weight: 700;
     padding-left: 2em;
 }
 
 footer {
     text-align: center;
-}
-
-li {
-    display: inline;
+    background-color: black;
+    color: white;
 }
 
 ul {
@@ -33,10 +39,11 @@ ul {
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #444;
+    background-color: rgb(0, 0, 0);
 }
 
 li {
+    display: inline;
     float: right;
 }
 
@@ -49,5 +56,15 @@ li a {
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: rgb(34, 29, 93);
+}
+
+.mainpageblurb {
+    display: block;
+    background-color: white;
+    height: 10em;
+    width: 18em;
+    text-align: center;
+    padding: 2em;
+    margin: 1em;
 }
