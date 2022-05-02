@@ -20,46 +20,41 @@ main > h1 {
     
 }
 
+header {
+    background-color: grey;
+}
+
+
+header img {
+    height: 85px;
+}
+
 .homepagedisplay {
     background-image: url('images/gallery-interior2.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
 
-header > h1 {
-    font-weight: 700;
-    padding-left: 2em;
-}
 
 footer {
     text-align: center;
     background-color: black;
     color: white;
+    font-size: 1.2rem;
 }
-.topnav {
 
-    list-style-type: none;
+footer h2 {
+    font-style: italic;
+    text-transform: uppercase;
+    margin: 1rem 0 .3rem 0;
+    text-align: center;
+}
+
+.footerlist {
     margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: rgb(0, 0, 0);
-}
-
-.topnav > li {
-    display: inline;
-    float: right;
-}
-
-.topnav >li a {
-    display: block;
-    color: white;
+    list-style-type: none;
     text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.topnav > li a:hover {
-    background-color: rgb(34, 29, 93);
 }
 
 .mainpageblurb {
