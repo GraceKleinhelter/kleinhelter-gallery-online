@@ -12,7 +12,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/display.css">
     <link rel="stylesheet" href="css/gallery-grid.css">
-    <link rel="stylesheet" href="css/small.css">
 
 </head>
 
@@ -20,18 +19,22 @@
     <header class="collapsefix">
         <div class="headerrow">
             <section class="headercolumn small-12">
-                <img src="images/gallerylogo-blacktransparent.png" alt="Gallery Logo"/>
+                <img src="images/gallerylogo-blacktransparent.png" alt="Gallery Logo" />
             </section>
         </div>
-        <div>
-            <ul class="topnav">
-                <li><a class="active" href="index.html"></a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="artists.html">Artists</a></li>
-                <li><a href="shows.html">Shows</a></li>    
-            </ul>
+        <nav class="collapsefix">
+            <div class="navrow">
+                <button id="hamburgerBtn">&#9776;</button>
+                <ul id="primaryNav">
+                    <li><a class="active" href="index.html">Home</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
+                    <li><a href="artists.html">Artists</a></li>
+                    <li><a href="shows.html">Shows</a></li>
+                </ul>
+            </div>
+        </nav>
         </div>
     </header>
     <main class="homepagedisplay" style="background-image: url('images/gallery-interior2.jpg');">
@@ -45,7 +48,7 @@
                 <h2>Location</h2>
                 <ul class="footerlist">
                     <li>Kleinhelter Gallery</li>
-                    <li>701 E 8th St.</li> 
+                    <li>701 E 8th St.</li>
                     <li>New Albany, IN</li>
                     <li>on the corner of Culbertson and 8th</li>
                 </ul>
@@ -54,7 +57,7 @@
                 <h2>Company</h2>
                 <ul class="footerlist">
                     <li>Gallery</li>
-                    <li>Fine Art</li> 
+                    <li>Fine Art</li>
                     <li>Events</li>
                     <li>Classes</li>
                 </ul>
@@ -73,6 +76,7 @@
             </section>
         </div>
     </footer>
+    <script src="js/menuToggle.js"></script>
 </body>
 
 </html>

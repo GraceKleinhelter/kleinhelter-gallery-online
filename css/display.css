@@ -12,7 +12,7 @@ body {
     padding: 0;    
 }
 
-main > h1 {
+main  h1 {
     text-justify: left;
     padding: 2em;
     margin: 1em;
@@ -29,13 +29,64 @@ header img {
     height: 85px;
 }
 
+
 .homepagedisplay {
     background-image: url('images/gallery-interior2.jpg');
     background-size: cover;
     background-attachment: fixed;
 }
 
+/* Primary navigation bar */
 
+button#hamburgerBtn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.4rem;
+    cursor: pointer;
+    padding: 0 30px 0 2vw;
+}
+
+nav {
+    background-color: pink;
+}
+
+nav ul {
+        margin: 0;
+        padding: 0;   
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    display: block;
+    padding: .8rem 0;
+    color: blueviolet;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav li.active {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+}
+
+nav ul.open {
+    display: block;
+}
+
+nav ul {
+    display: none;
+}
+/* end primary nav styling */
+
+
+/* footer styling */
 footer {
     text-align: center;
     background-color: black;
@@ -56,6 +107,8 @@ footer h2 {
     list-style-type: none;
     text-align: center;
 }
+
+/* end footer styling */
 
 .mainpageblurb {
     display: block;
