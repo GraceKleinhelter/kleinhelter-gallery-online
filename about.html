@@ -16,17 +16,25 @@
 </head>
 
     <body>
-        <header>
-            <h1>Kleinhelter Gallery</h1>
-            <div>
-                <ul class="topnav">
-                    <li><a class="active" href="index.html"></a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="events.html">Events</a></li>
-                    <li><a href="artists.html">Artists</a></li>
-                    <li><a href="shows.html">Shows</a></li>    
-                </ul>
+        <header class="collapsefix">
+            <div class="headerrow">
+                <section class="headercolumn small-12">
+                    <img src="images/gallerylogo-blacktransparent.png" alt="Gallery Logo" />
+                </section>
+            </div>
+            <nav class="collapsefix">
+                <div class="navrow">
+                    <button id="hamburgerBtn">&#9776;</button>
+                    <ul id="primaryNav">
+                        <li><a class="active" href="index.html">Home</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="events.html">Events</a></li>
+                        <li><a href="artists.html">Artists</a></li>
+                        <li><a href="shows.html">Shows</a></li>
+                    </ul>
+                </div>
+            </nav>
             </div>
         </header>
         <main>
@@ -36,10 +44,40 @@
             <p>Ray and Gina have been working artists in the Louisville area for over thirty years.</p>
         
         </main>
-     
-        <footer>
-            <p>Kleinhelter Gallery, located at |<address>701 E 8th St. New Albany, IN 47150</address></p>
-            
+        <footer class="collapsefix">
+            <div class="footerrow limited">
+                <section class="footercolumn small-12 medium-6 large-3">
+                    <h2>Location</h2>
+                    <ul class="footerlist">
+                        <li>Kleinhelter Gallery</li>
+                        <li>701 E 8th St.</li>
+                        <li>New Albany, IN</li>
+                        <li>on the corner of Culbertson and 8th</li>
+                    </ul>
+                </section>
+                <section class="footercolumn small-12 medium-6 large-3">
+                    <h2>Company</h2>
+                    <ul class="footerlist">
+                        <li>Gallery</li>
+                        <li>Fine Art</li>
+                        <li>Events</li>
+                        <li>Classes</li>
+                    </ul>
+                </section>
+                <section class="footercolumn small-12 medium-6 large-3">
+                    <h2>Social</h2>
+                    <ul class="footerlist">
+                        <li>Facebook</li>
+                        <li>Instagram</li>
+                    </ul>
+                </section>
+                <section class="footercolumn small-12 medium-6 large-3">
+                    <h2>About Us</h2>
+                    <img src="images/gallerylogo-whitetransparent.png" alt="Gallery logo" width="225px">
+                    <p>&copy; 2022 &bull; all rights reserved.</p>
+                </section>
+            </div>
         </footer>
+        <script src="js/menuToggle.js"></script>
     </body>
 </html>

@@ -18,7 +18,6 @@ html {
 
 
 body {
-    margin: 1em;
     display: grid;
     grid: auto-flow min-content / repeat(12);
 
@@ -77,6 +76,7 @@ main {
     nav ul {
         display: block;
         list-style-type: none;
+        align-items: baseline;
     }
 
     nav li {
@@ -91,33 +91,7 @@ main {
         padding: 14px 16px;
         text-decoration: none;
     }
-/*
-    .topnav {
 
-        list-style-type: none;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-        background-color: rgb(0, 0, 0);
-    }
-    
-    .topnav > li {
-        display: inline;
-        float: right;
-    }
-    
-    .topnav >li a {
-        display: block;
-        color: white;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-    
-    .topnav > li a:hover {
-        background-color: rgb(34, 29, 93);
-    }
-    */
 }
 
 @media only screen and (min-width: 1024px) {
