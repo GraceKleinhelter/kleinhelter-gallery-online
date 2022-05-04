@@ -25,9 +25,7 @@ body {
 }
 
 header {
-
     grid-column: 1 / 13;
-    grid-row: 1 / 2;
 }
 
 footer {
@@ -58,7 +56,7 @@ footer {
 
 main {
     grid-column: 1 / 13;
-    grid-row: 2 / 12;
+    grid-row: 2 /13;
 }
 
 @media only screen and (min-width: 768px) {
