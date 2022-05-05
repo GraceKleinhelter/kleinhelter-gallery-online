@@ -41,7 +41,7 @@
         </div>
     </header>
     <main>
-        <!-- JavaScript for Contact Form-->
+        <!-- JavaScript for Contact Form
         <div class="container">
             <form onsubmit="sendEmail(); reset(); return false;">
                 <h3>Join Our Mailing List!</h3>
@@ -52,6 +52,39 @@
                 <button type="submit">Send</button>
             </form>
         </div>
+        -->
+
+        <!-- no Java Script
+        <div class="container">
+        <form action="https://formspree.io/f/xayvlzlq" method="POST">
+            <h3>Join Our Mailing List!</h3>
+            <label>
+                <input type="text" id="name" placeholder="Your Name" required>
+            </label>
+            <label>
+                <input type="email" name="email" placeholder="Email">
+            </label>
+            <label>
+                <textarea name="message" placeholder="Comments"></textarea>
+            </label>
+         \ -->
+
+        <title>Contact Form</title>
+        <section class="form-container">
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayvlzlq" method="post">
+            <fieldset id="fs-frm-inputs">
+              <label for="full-name">Full Name</label>
+              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
+              <label for="email-address">Email Address</label>
+              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+              <label for="message">Message</label>
+              <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+            </fieldset>
+            <input type="submit" value="Submit">
+          </form>
+        </section>
+        <body>
 
     </main>
     <footer class="collapsefix">
@@ -89,25 +122,8 @@
         </div>
     </footer>
     <script src="js/menuToggle.js"></script>
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script>
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.gmail.com",
-                Username: "kleinheltergallery@gmail.com",
-                Password: "53D3527D1769A5619513AACF5092969A6438",
-                To: 'kleinheltergallery@gmail.com',
-                From: document.getElementById("email").value,
-                Subject: "New Contact Form Enquiry",
-                Body: "Name: " + document.getElementById("name").value
-                    + "<br> Email:" + document.getElementById("email").value
-                    + "<br> Phone no:" + document.getElementById("phone").value
-                    + "<br> message:" + document.getElementById("message").value
-            }).then(
-                message => alert("Message Sent Successfully")
-            );
-        }
-    </script>
+    <script src="js/contact.js"></script>
+
 </body>
 
 </html>
