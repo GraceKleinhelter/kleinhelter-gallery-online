@@ -12,10 +12,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/display.css">
     <link rel="stylesheet" href="css/gallery-grid.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/small.css">
-    <link rel="stylesheet" href="css/medium.css">
-    <link rel="stylesheet" href="css/large.css">
 </head>
 
 <body>
@@ -32,7 +28,6 @@
                     <li><a class="active" href="index.html">Home</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="events.html">Events</a></li>
                     <li><a href="artists.html">Artists</a></li>
                     <li><a href="shows.html">Shows</a></li>
                 </ul>
@@ -41,50 +36,37 @@
         </div>
     </header>
     <main>
-        <!-- JavaScript for Contact Form
-        <div class="container">
-            <form onsubmit="sendEmail(); reset(); return false;">
-                <h3>Join Our Mailing List!</h3>
-                <input type="text" id="name" placeholder="Your Name" required>
-                <input type="email" id="email" placeholder="Email id" required>
-                <input type="text" id="phone" placeholder="Phone no." required>
-                <textarea id="message" rows="4" placeholder="Comments"></textarea>
-                <button type="submit">Send</button>
-            </form>
-        </div>
-        -->
-
-        <!-- no Java Script
-        <div class="container">
-        <form action="https://formspree.io/f/xayvlzlq" method="POST">
-            <h3>Join Our Mailing List!</h3>
-            <label>
-                <input type="text" id="name" placeholder="Your Name" required>
-            </label>
-            <label>
-                <input type="email" name="email" placeholder="Email">
-            </label>
-            <label>
-                <textarea name="message" placeholder="Comments"></textarea>
-            </label>
-         \ -->
 
         <title>Contact Form</title>
-        <section class="form-container">
-        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/xayvlzlq" method="post">
-            <fieldset id="fs-frm-inputs">
-              <label for="full-name">Full Name</label>
-              <input type="text" name="name" id="full-name" placeholder="First and Last" required="">
-              <label for="email-address">Email Address</label>
-              <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
-              <label for="message">Message</label>
-              <textarea rows="5" name="message" id="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-              <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
-            </fieldset>
-            <input type="submit" value="Submit">
-          </form>
+        <section class="contact-form">
+            <div class="cont-frm-container">
+                <form action="https://formspree.io/f/xayvlzlq" method="POST" id="my-form">
+
+                    <div class="form-group">
+                        <label for="firstName">First Name</label>
+                        <input type="text" id="firstName" name="firstName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="lastName">Last Name</label>
+                        <input type="text" id="lastName" name="lastName">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                    </div>
+
+                    <button class="cont-frm-button" type="submit">Submit</button>
+                </form>
+            </div>
+            <div id="status"></div>
         </section>
-        <body>
 
     </main>
     <footer class="collapsefix">
