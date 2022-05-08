@@ -17,20 +17,21 @@ html {
 
 body {
     display: grid;
-    grid: auto-flow min-content / repeat(12);
+    grid: auto-flow/ repeat(12, 1fr);
 
 }
 
-/*
+
 header {
-    grid-column: 1 / 13;
+    grid-column: span 12;
 }
-*/
+
 
 footer {
     margin: 0;
     padding: 0;
-    grid-column: 1 / 13;
+    grid-column: span 12;
+    grid-row: span 1;
 }
 
 .footerrow {
