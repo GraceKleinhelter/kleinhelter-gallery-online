@@ -4,37 +4,45 @@
 <head>
     <meta charset="UTF-8>">
     <meta name="viewport" content="width=device-width, initial scale=1">
-    <title>Kleinhelter Gallery | Contact</title>
+    <title>Kleinhelter Gallery | Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,300;0,700;1,100;1,300;1,700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;0,800;1,200;1,300;1,600;1,800&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
     <link rel="stylesheet" href="css/display.css">
     <link rel="stylesheet" href="css/gallery-grid.css">
+
 </head>
 
 <body>
-    <header class="collapsefix">
-        <div class="headerrow">
-            <section class="headercolumn small-12">
-                <img src="images/gallerylogo-blacktransparent.png" alt="Gallery Logo" />
-            </section>
-        </div>
-        <nav class="collapsefix">
-            <div class="navrow">
-                <button id="hamburgerBtn">&#9776;</button>
-                <ul id="primaryNav">
-                    <li><a class="active" href="index.html">Home</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="artists.html">Artists</a></li>
-                    <li><a href="shows.html">Shows</a></li>
-                </ul>
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="/" id="navbar__logo">KLEINHELTER GALLERY</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-        </nav>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Shows</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="/" class="navbar__links">Artists</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="/contact.html" class="button">Sign Up</a>
+                </li>
+            </ul>
         </div>
-    </header>
+    </nav>
     <main>
 
         <title>Contact Form</title>
@@ -70,41 +78,64 @@
         </section>
 
     </main>
-    <footer class="collapsefix">
-        <div class="footerrow limited">
-            <section class="footercolumn small-12 medium-6 large-3">
-                <h2>Location</h2>
-                <ul class="footerlist">
-                    <li>Kleinhelter Gallery</li>
-                    <li>701 E 8th St.</li>
-                    <li>New Albany, IN</li>
-                    <li>on the corner of Culbertson and 8th</li>
-                </ul>
-            </section>
-            <section class="footercolumn small-12 medium-6 large-3">
-                <h2>Company</h2>
-                <ul class="footerlist">
-                    <li>Gallery</li>
-                    <li>Fine Art</li>
-                    <li>Events</li>
-                    <li>Classes</li>
-                </ul>
-            </section>
-            <section class="footercolumn small-12 medium-6 large-3">
-                <h2>Social</h2>
-                <ul class="footerlist">
-                    <li>Facebook</li>
-                    <li>Instagram</li>
-                </ul>
-            </section>
-            <section class="footercolumn small-12 medium-6 large-3">
+<!--Footer Section-->
+<div class="footer__container">
+    <div class="footer__links">
+        <div class="footer__links--wrapper">
+            <div class="footer__links--items">
                 <h2>About Us</h2>
-                <img src="images/gallerylogo-whitetransparent.png" alt="Gallery logo" width="225px">
-                <p>&copy; 2022 &bull; all rights reserved.</p>
-            </section>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investments</a>
+                <a href="/">Terms of Service</a>
+            </div>
+            <div class="footer__links--items">
+                <h2>About Us</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investments</a>
+                <a href="/">Terms of Service</a>
+            </div>
         </div>
-    </footer>
-    <script src="js/menuToggle.js"></script>
+        <div class="footer__links--wrapper">
+            <div class="footer__links--items">
+                <h2>About Us</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investments</a>
+                <a href="/">Terms of Service</a>
+            </div>
+            <div class="footer__links--items">
+                <h2>About Us</h2>
+                <a href="/">How it works</a>
+                <a href="/">Testimonials</a>
+                <a href="/">Careers</a>
+                <a href="/">Investments</a>
+                <a href="/">Terms of Service</a>
+            </div>
+        </div>
+    </div>
+    <div class="social__media">
+        <div class="social__media--wrap">
+            <div class="footer__logo">
+                <a href="/" id="footer__logo">KLEINHELTER GALLERY</a>
+            </div>
+            <p class="website__rights">&copy; 2022 &bull; all rights reserved.</p>
+            <div class="social__icons">
+                <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="/" class="social__icon--link" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="/js/menu.js"></script>
     <script src="js/contact.js"></script>
 
 </body>
