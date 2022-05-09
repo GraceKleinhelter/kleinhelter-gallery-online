@@ -1,6 +1,5 @@
 * {
     font-family: 'Montserrat', sans-serif;
-    ;
     font-weight: 300;
     font-size: 16px;
     box-sizing: border-box;
@@ -8,8 +7,8 @@
     padding: 0;
 }
 
-html,
-body {}
+body {
+}
 
 .navbar {
     background: #131313;
@@ -35,13 +34,16 @@ body {}
 }
 
 #navbar__logo {
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    color: #fff;
+    /*
+    background-color: #d2f1fa;
+    background-image: linear-gradient(to top, #1364b6 0%, #d2f1fa 100%);
     background-size: 100%;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    */
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -93,17 +95,17 @@ body {}
     border: none;
     outline: none;
     border-radius: 4px;
-    background: #f77062;
+    background: #6b96c8;
     color: #fff;
 }
 
 .button:hover {
-    background: #4837ff;
+    background: #2576ac;
     transition: all 0.3s ease;
 }
 
 .navbar__links:hover {
-    color: #f77062;
+    color: #2f8bc8;
     transition: all 0.3s ease;
 }
 
@@ -202,19 +204,24 @@ body {}
         transform: translateY(-8px) rotate(-45deg);
     }
 }
-
-.main {
-    background-color: #141414;
+#main__background-img {
+    background: #141414;
+    background-image:
+    linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 0.9)),
+    url("/images/gallery-interior2.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
 }
 
 .main__container {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     align-items: center;
     justify-self: center;
     margin: 0 auto;
     height: 90vh;
-    background-color: #141414;
     z-index: 1;
     width: 100%;
     max-width: 1300px;
@@ -222,10 +229,18 @@ body {}
 }
 
 .main__content h1 {
-    font-size: 4rem;
-    background-color: #ff8177;
-    background-image: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-color: #2576ac;
+    background-image: linear-gradient(to right,
+            #afe2ff 0%,
+            #a2d8f7 0%,
+            #77bae1 21%,
+            #77bae1 52%,
+            #487ec1 78%,
+            #155b8a 100%);
     background-size: 100%;
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 600;
     -webkit-background-clip: text;
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -245,14 +260,17 @@ body {}
 
 .main__content p {
     margin-top: 1rem;
-    font-size: 2rem;
-    font-weight: 700;
+    font-size: 1.5rem;
+    font-weight: 300;
     color: #fff;
 }
 
 .main__btn {
     font-size: 1rem;
+    background-color: #6b96c8;
+    /*
     background-image: linear-gradient(to top, #f77062 0%, #fe5196 100%);
+    */
     padding: 14px 32px;
     border: none;
     border-radius: 4px;
@@ -278,7 +296,7 @@ body {}
     left: 0;
     width: 0;
     height: 100%;
-    background: #4837ff;
+    background: #0d65a0;
     transition: all 0.35s;
     border-radius: 4px;
 }
@@ -296,8 +314,8 @@ body {}
 }
 
 #main__img {
-    height: 80%;
-    width: 80%;
+    height: 100%;
+    width: 90%;
 }
 
 /* Mobile Responsive Main Page*/
@@ -355,7 +373,9 @@ body {}
 }
 
 .show-info {
+    /*
     background: #141414;
+    */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -365,12 +385,12 @@ body {}
 .show-info h1 {
     background-color: #ff8177;
     background-image: linear-gradient(to right,
-            #ff8177 0%,
-            #ff867a 0%,
-            #ff8c7f 21%,
-            #f99185 52%,
-            #cf556c 78%,
-            #b12a5b 100%);
+    #afe2ff 0%,
+    #a2d8f7 0%,
+    #77bae1 21%,
+    #77bae1 52%,
+    #487ec1 78%,
+    #155b8a 100%);
     background-size: 100%;
     margin-bottom: 5rem;
     font-size: 2.5rem;
@@ -418,6 +438,7 @@ body {}
     padding: 10px 20px;
     border: none;
     outline: none;
+    text-decoration: none;
     border-radius: 4px;
     background: #f77062;
     position: absolute;
@@ -425,6 +446,13 @@ body {}
     left: 30px;
     font-size: 1rem;
     cursor: pointer;
+}
+
+.show__card--btn a{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
 }
 
 .show__card:hover {
