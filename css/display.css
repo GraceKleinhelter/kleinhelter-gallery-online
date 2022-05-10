@@ -208,7 +208,7 @@ body {
     background: #141414;
     background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 0.9)),
-    url("/images/gallery-interior2.jpg");
+    url("../images/gallery-interior2.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -747,7 +747,7 @@ nav ul {
     background: #141414;
     background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.5) 65%, rgba(0, 0, 0, 0.7)),
-    url("/images/l_beisler/L_Beisler2022sculpturePainting5.jpg");
+    url("../images/l_beisler/L_Beisler2022sculpturePainting5.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
