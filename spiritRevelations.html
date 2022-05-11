@@ -1,77 +1,55 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8>">
-    <meta name="viewport" content="width=device-width, initial scale=1">
-    <title>Kleinhelter Gallery | Ray Kleinhelter Art</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,600;0,800;1,200;1,300;1,600;1,800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
-    <title>Ray Kleinhelter Artwork Expand</title>
-    <link rel="stylesheet" href="css/image-gallery-grid.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/17567faf29.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/spiritrev.css">
     <link rel="stylesheet" href="css/display.css">
+    <title>Spirit Revelations</title>
 </head>
-
 <body>
-    <nav class="navbar">
-        <div class="navbar__container">
-            <a href="index.html" id="navbar__logo">KLEINHELTER GALLERY</a>
-            <div class="navbar__toggle" id="mobile-menu">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
+    <body id="main__background-img">
+        <nav class="navbar">
+            <div class="navbar__container">
+                <a href="index.html" id="navbar__logo">KLEINHELTER GALLERY</a>
+                <div class="navbar__toggle" id="mobile-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+                <ul class="navbar__menu">
+                    <li class="navbar__item">
+                        <a href="index.html" class="navbar__links">Home</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="shows.html" class="navbar__links">Shows</a>
+                    </li>
+                    <li class="navbar__item">
+                        <a href="artists.html" class="navbar__links">Artists</a>
+                    </li>
+                    <li class="navbar__btn">
+                        <a href="contact.html" class="button">Sign Up</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="navbar__menu">
-                <li class="navbar__item">
-                    <a href="index.html" class="navbar__links">Home</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="shows.html" class="navbar__links">Shows</a>
-                </li>
-                <li class="navbar__item">
-                    <a href="artists.html" class="navbar__links">Artists</a>
-                </li>
-                <li class="navbar__btn">
-                    <a href="contact.html" class="button">Sign Up</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-
-    <div class="rayk-gallery">
-        <div class="img-container">
-            <img src="images/l_beisler/LBgallery1_preview.jpg" alt="Larry Beisler Sculpture 1"
-                data-original='r_kleinhelter-imgFULL1.jpg' />
-        </div>
-
-        <div class="img-container">
-            <img src="images/l_beisler/LBgallery2_preview.jpg" alt="Larry Beisler Sculpture 2"
-                data-original='r_kleinhelter-imgFULL2.jpg' />
-        </div>
-
-        <div class="img-container">
-            <img src="images/l_beisler/LBgallery3_preview.jpg" alt="Larry Beisler Sculpture 3"
-                data-original='r_kleinhelter-imgFULL3.jpg' />
-        </div>
-
-        <div class="img-container">
-            <img src="images/l_beisler/LBgallery4_preview.jpg" alt="Larry Beisler Sculpture 4"
-                data-original='r_kleinhelter-imgFULL4.jpg' />
+        </nav>
+    <div class="carousel-container">
+        <i class="fa-solid fa-arrow-left-long" id="prevBtn"></i>
+        <i class="fa-solid fa-arrow-right" id="nextBtn"></i>
+        <div class="carousel-slide">
+            <img src="images/l_beisler/L_Beisler2022sculpturePainting5.jpg" id="lastClone" alt="">
+            <img src="images/l_beisler/L_Beisler2022_sculpturePainting1.jpg" alt="Spirit Revelations 1">
+            <img src="images/l_beisler/L_Beisler2022_sculpturePainting2.jpg" alt="Spirit Revelations 2">
+            <img src="images/l_beisler/L_Beisler2022sculpturePainting3.jpg" alt="Spirit Revelations 3">
+            <img src="images/l_beisler/L_Beisler2022sculpturePainting4.jpg" alt="Spirit Revelations 4">
+            <img src="images/l_beisler/L_Beisler2022sculpturePainting5.jpg" alt="Spirit Revelations 5">
+            <img src="images/l_beisler/L_Beisler2022_sculpturePainting1.jpg" id="firstClone" alt="">
         </div>
     </div>
 
-    <div class="modal">
-        <img src="images/r_kleinhelterFULL/r_kleinhelter-imgFULL1.jpg" alt="" class="full-img" />
-        <p class="caption"></p>
-    </div>
-
-        <script src="js/app.js"></script>
+    <script src="js/spirit.js"></script>
 </body>
-
 </html>

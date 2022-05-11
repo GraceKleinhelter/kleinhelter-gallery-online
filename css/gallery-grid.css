@@ -19,23 +19,6 @@ html {
 }
 
 
-
-/*
-body {
-    display: grid;
-    grid: auto-flow/ repeat(12, 1fr);
-
-}
-
-
-header {
-    grid-column: span 12;
-}
-
-
-
-*/
-
     /* Gallery Grid Styling */
 
 .gallery-grid {
@@ -68,56 +51,3 @@ header {
     height: 100%;
     object-fit: cover;
 }
-
-/*
-    @media only screen and (min-width: 768px) {
-
-        .medium-6 {
-            width: 50%;
-        }
-
-        header img {
-            height: 100px;
-            float: left;
-        }
-
-        nav button {
-            display: none;
-        }
-
-        nav ul {
-            display: block;
-            list-style-type: none;
-            align-items: baseline;
-        }
-
-        nav li {
-            float: right;
-            display: inline;
-        }
-
-        nav a {
-
-            color: black;
-            text-align: center;
-            padding: 14px 16px;
-            text-decoration: none;
-        }
-
-    }
-
-    @media only screen and (min-width: 1024px) {
-
-        .large-3 {
-            width: 25%;
-        }
-
-
-    }
-
-    .collapsefix::after {
-        content: "";
-        display: table;
-        clear: both;
-    }
-    */
