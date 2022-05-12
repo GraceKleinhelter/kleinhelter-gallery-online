@@ -229,6 +229,11 @@ body {
 }
 
 .main__content h1 {
+    color: rgb(203, 203, 203);
+    margin-bottom: 2rem;
+    font-size: 4rem;
+    font-weight: 600;
+    /*
     background-color: #2576ac;
     background-image: linear-gradient(to right,
             #afe2ff 0%,
@@ -245,6 +250,7 @@ body {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    */
 }
 
 .main__content h2 {
@@ -318,6 +324,12 @@ body {
     width: 90%;
 }
 
+figcaption {
+    color: white;
+    margin: 10px;
+    letter-spacing: 2px;
+}
+
 /* Mobile Responsive Main Page*/
 
 @media screen and (max-width: 768px) {
@@ -383,6 +395,13 @@ body {
 }
 
 .show-info h1 {
+    color: rgb(203, 203, 203);
+    font-size: 2.5rem;
+    font-weight: 600;;
+    margin-bottom: 5rem;
+    font-size: 2.5rem;
+    font-weight: 600;
+    /*
     background-color: #ff8177;
     background-image: linear-gradient(to right,
     #afe2ff 0%,
@@ -399,6 +418,7 @@ body {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+    */
 }
 
 .show-info h2 {
@@ -676,67 +696,7 @@ body {
      }
  }
 
-/*Show Info Section CSS*/
 
-/*
-header img {
-    height: 65px;
-    padding-left: 20px;
-    display: block;
-    align-self: center;
-
-}
-
-.homepagedisplay {
-    background-image: url('images/gallery-interior2.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-}
-
- Primary navigation bar 
-
-button#hamburgerBtn {
-    background: none;
-    border: none;
-    color: white;
-    font-size: 2.4rem;
-    cursor: pointer;
-    padding: 0 30px 0 2vw;
-}
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav li {
-    list-style-type: none;
-}
-
-nav a {
-    display: block;
-    padding: .8rem 0;
-    color: blueviolet;
-    text-align: center;
-    text-decoration: none;
-}
-
-nav li.active {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-nav a:hover {
-    background-color: rgba(0, 0, 0, 0.2);
-}
-
-nav ul.open {
-    display: block;
-}
-
-nav ul {
-    display: none;
-}
- end primary nav styling */
 
 /* Contact Form*/
 
@@ -772,22 +732,11 @@ nav ul {
     margin-bottom: 20px;
 }
 .contact-form h3 {
-    background-color: #ff8177;
-    background-image: linear-gradient(to right,
-    #dbf2ff 0%,
-    #d8f1ff 0%,
-    #a6d6f1 21%,
-    #95cae9 52%,
-    #80aee7 78%,
-    #5b9bc5 100%);
-    background-size: 100%;
+    color: rgb(203, 203, 203);
     margin-bottom: 3rem;
     font-size: 2.5rem;
     font-weight: 600;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
+  
 }
 
 .form-group {
