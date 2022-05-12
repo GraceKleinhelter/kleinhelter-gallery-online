@@ -608,13 +608,26 @@ figcaption {
 .footer__links--items > h2 {
     color: #fff;
     font-size: 24px;
-    font-weight: 600;
+    font-weight: 300;
+}
+
+.footer__links--items ul {
+    margin: 0;
+    padding: 0;
+    font-size: .5rem;
+    list-style-type: none;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    text-align: left;
 }
 
 .footer__links--items a {
     color: #fff;
     text-decoration: none;
     margin-bottom: 0.5rem;
+    text-decoration: none;
+    text-align: left;
 }
 
 .footer__links--items a:hover {
